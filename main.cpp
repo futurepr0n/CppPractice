@@ -3,18 +3,14 @@
 using namespace std;
 
 int main(){
-    bool isGameOver;
-    isGameOver = false;
-    isGameOver = true;
-    bool isNotGameOver = isGameOver;
-    isGameOver = false;
-    isGameOver = 5 > 2;
-    
-    int currentHealth = 100;
-    currentHealth = 50 - 2;
+    char g = 'g';
+    char period = '.';
+    char one = '1';
 
-    float percentHealth = 0.45;
-    double pi = 3.14159;
+    string playerName = "Mark";
+    string empty = "";
+    cout << playerName.length();
 
-    cout << "Is Game Over? " << isGameOver <<"\nWhat is players CurrentHealth? "<< currentHealth  << "\nWhat about their Percent Health?" << percentHealth << "\nAnd what is pi? " << pi ;
+
+    //cout << "Is Game Over? " << isGameOver <<"\nWhat is players CurrentHealth? "<< currentHealth  << "\nWhat about their Percent Health?" << percentHealth << "\nAnd what is pi? " << pi ;
 }
