@@ -3,14 +3,27 @@
 using namespace std;
 
 int main(){
-    char g = 'g';
-    char period = '.';
-    char one = '1';
+ 
+    int someInt = 1;
+    int *ptr = &someInt;
+    
+    cout << "This is the memory Address of ptr " << ptr << "\n";
+    cout << "And this is the value *ptr "<< *ptr << "\n";
 
-    string playerName = "Mark";
-    string empty = "";
-    cout << playerName.length();
+    int someOtherInt = someInt;
+
+    cout << "This is the value of someOtherInt " << someOtherInt << " before we changed someInt's value \n";
+    someInt = 5;
+
+    cout << "This is the value of someOtherInt " << someOtherInt << " after we changed someInt's value to 5 \n";
+
+    cout << "Now with pointers \n";
+    cout <<"You can see that the reference to *ptr is changing with the address " << *ptr <<"\n";
 
 
-    //cout << "Is Game Over? " << isGameOver <<"\nWhat is players CurrentHealth? "<< currentHealth  << "\nWhat about their Percent Health?" << percentHealth << "\nAnd what is pi? " << pi ;
-}
+
+
+
+
+
+ }
