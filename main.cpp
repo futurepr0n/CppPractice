@@ -4,26 +4,34 @@ using namespace std;
 
 int main(){
  
-    int someInt = 1;
-    int *ptr = &someInt;
+    int maxHealth = 100;
+    int currentHealth = maxHealth;
+
+    bool isGameOver = false;
+
+    isGameOver = !isGameOver;
+
+    currentHealth = currentHealth - 10;
+
+    cout << "The current Health is: " << currentHealth << "\n";
+
+    cout << "Now with %100 is equals = " << currentHealth % 100 << "\n";
+
+    cout << "Now with % 80: " << currentHealth % 80 << "\n";
+
+    cout << "The current Health is: " << currentHealth << "\n";
+    currentHealth++;
+    cout << "The current Health ++  is: " << currentHealth << "\n";
+
+    currentHealth+=10;
+    cout << "The current Health +=10  is: " << currentHealth << "\n";
+
+    string playerName = "Mark";
+    string welcome = "Welcome ";
+    cout << welcome + playerName;
+
+
+
     
-    cout << "This is the memory Address of ptr " << ptr << "\n";
-    cout << "And this is the value *ptr "<< *ptr << "\n";
-
-    int someOtherInt = someInt;
-
-    cout << "This is the value of someOtherInt " << someOtherInt << " before we changed someInt's value \n";
-    someInt = 5;
-
-    cout << "This is the value of someOtherInt " << someOtherInt << " after we changed someInt's value to 5 \n";
-
-    cout << "Now with pointers \n";
-    cout <<"You can see that the reference to *ptr is changing with the address " << *ptr <<"\n";
-
-
-
-
-
-
 
  }
