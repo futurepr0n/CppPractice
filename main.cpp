@@ -3,18 +3,17 @@
 
 using namespace std;
 
- int takeDamage (int attack, int defence){
-     int damage = attack - defence;
-     if (damage < 0){
-         damage = 0;
-     }
-    return damage;
- }
+class GameCharacter {
+    public:
+        int maxHealth, currentHealth, attack, defence;
+        GameCharacter(int, int, int);
+        void takeDamage(int);
+
+}
 
 int main(){
     
-    int damage = takeDamage(10,5);
-    cout << damage;
+
     
  
  }
