@@ -3,20 +3,19 @@
 
 using namespace std;
 
+ int takeDamage (int attack, int defence){
+     int damage = attack - defence;
+     if (damage < 0){
+         damage = 0;
+     }
+    return damage;
+ }
+
 int main(){
     
-    bool isGameRunning = true;
-    int xPos = 0;
-    int endPos = 10;
-    while (isGameRunning) {
-        xPos +=1;
-        cout << xPos << "\n";
-        if (xPos >= endPos) {
-            isGameRunning = false;
-        }
-    }
-    cout << "Game Over! \n";
-
-
+    int damage = takeDamage(10,5);
+    cout << damage;
     
+ 
  }
+
